@@ -1,41 +1,68 @@
 <html>
 
+
     <!--links to JQuery and the javascript, css files to make the program easier to read-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Links to google fonts we can change this later but I wanted to put in a space filler for it now! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <!-- End google fonts links -->
+
     <script src="script.js"></script>
+
+ 
 
     <!--make Voldemort's helathbar the title? start off all green
         and make progressivly more red with each correct answer-->
-    <div id="Header">
-        <div id="Title">
-            <h1 style="text-align: center;">Title</h1> <!--either an actual title or just 'Voldemort'-->
-        </div>
-        <!--put healbar under title-->
-        <div id="HealthBar">
-            <!--left side colored red, start with no width, increase as damage is dealt-->
-            <div id="Damage">
 
+    <div class="row">
+        <div class="col-12">
+            <div id="Title">
+                <center>
+            Defeat Lord Voldemort
+                </center>
             </div>
+        </div> <!-- End col-12-->
+    </div> <!-- End row -->
 
-            <!--right side colored green, decrease width as damage is dealt-->
-            <div id="Health">
+ 
 
+    <div class="row">
+        <div class="col-12">
+            <div id="HealthBar">
+                <!--left side colored red, start with no width, increase as damage is dealt-->
+                <div id="Damage">
+
+                </div>
+
+                <!--right side colored green, decrease width as damage is dealt-->
+
+                <div id="Health">
+
+                </div>
             </div>
-        </div>
-    </div>
+        </div> <!-- End col-12-->
+    </div> <!-- End row -->
 
-    <!--body of the website - maybe where we have a picture of Harry
-        on the left and a picture of Voldemort on the right, animating
-        on each correct/wrong answer-->
+ 
+
+    <!--pictures of harry & voldemort like they are battling
+        maybe change voldemort to a weaker form depending on health bar-->
     <div id="main">
 
     </div>
 
-    <!--question container - we could make this either the bottom of the 
+ 
+
+    <!--question container - we could make this either the bottom of the
         page or the bottom. Bottom might look cleaner?-->
     <div>
 
+
     </div>
 
+ 
 </html>
