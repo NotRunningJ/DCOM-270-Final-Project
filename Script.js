@@ -272,7 +272,7 @@ function checkAnswer(answer) {
 
 // change healthbar & anything else
 function answerCorrect() {
-
+   // shirnk green and grow red by...10%?
 }
 
 // what happens here?
