@@ -253,6 +253,11 @@ function changeQuestion() {
 
    /* call questions[question].____
       to get values associated with the question to push to html */
+   $("#Question").html(questions[qNum].question);
+   $("#AnswerA").html(questions[qNum].a);
+   $("#AnswerB").html(questions[qNum].b);
+   $("#AnswerC").html(questions[qNum].c);
+   $("#AnswerD").html(questions[qNum].d);
 
    qasked++; // increment because we asked a new question
 }
@@ -260,7 +265,7 @@ function changeQuestion() {
 /* check if the answer was correct by comparing the answer with 
    the question Object's answer value */
 function checkAnswer(answer) {
-   if(true) { // answer is correct
+   if(answer == questions[qNum].answer) { // answer is correct
       qcorrect++;
       answerCorrect();
    } else { // answer is wrong
@@ -270,9 +275,13 @@ function checkAnswer(answer) {
    changeQuestion(); // change question after checking answer
 }
 
+var health = 100;
 // change healthbar & anything else
 function answerCorrect() {
    // shirnk green and grow red by...10%?
+   health -= 10;
+   $('#Health').width(health + '%');
+   $('#Damage').width((100-health) + '%');
 }
 
 // what happens here?
@@ -293,13 +302,26 @@ $(document).ready(function() {
    changeQuestion();
 
    // click functionality for the 4 different answers
-   $("#answerA").click(checkAnswer(0));
+   $("#AnswerA").click(function(){ 
+      checkAnswer(0);   
+   });
 
-   $("#answerB").click(checkAnswer(1));
+   $("#AnswerB").click(function(){ 
+      checkAnswer(1);   
+   });
 
-   $("#answerC").click(checkAnswer(2));
+   $("#AnswerC").click(function(){ 
+      checkAnswer(2);   
+   });
 
-   $("#answerD").click(checkAnswer(3));
+   $("#AnswerD").click(function(){ 
+      checkAnswer(3);   
+   });
+
+   // purely for testing the healthbar changing before questions are set up
+   $("#HealthBar").click(function(){ 
+      answerCorrect();   
+   });
 
 
 }); // end document.ready()

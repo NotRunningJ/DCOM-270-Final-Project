@@ -62,7 +62,7 @@ body {
 /* left side of the health bar - colored red - start with no width (not shown)
    then increse 10% each correct answer */
 #Damage {
-    width:20%; /* 50 just for testing purposes*/
+    width:0%;
     background-color: red;
     height: 100%;
     float:left;
@@ -72,7 +72,7 @@ body {
 /* right side of the health bar = colored green - start with width 100%
    then decrease 10% each correct answer */
 #Health {
-    width:80%;
+    width:100%;
     background-color: green;
     height: 100%;
     float:right;
