@@ -20,12 +20,12 @@ function genQuestions() {
       for correctness easier (checking two integers for equality*/
 
    Question0 = {
-      question: "How much does LVC cost",
-      a: "a little",
-      b: "not enough",
-      c: "enough",
-      d: "way too much",
-      answer: 3 ,
+      question: "What is the name of the pub at the entrance to Diagon Alley?",
+      a: "Ollivander's Wand Shop",
+      b: "Gringotts",
+      c: "The Leaky Cauldron",
+      d: "Hogwarts",
+      answer: 2 ,
       asked: false // keep track to not duplicate questions in a game
    }
    /* get access to the object variables by 
@@ -33,91 +33,91 @@ function genQuestions() {
       this returns 3 */
    
    Question1 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What is the name of Harry's owl?",
+      a: "Crookshanks",
+      b: "Hedwig",
+      c: "Scabbers",
+      d: "Trevor",
+      answer: 1, //change
       asked: false
    }
    
    Question2 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What is the government called in the magical world?",
+      a: "The Law of Magic",
+      b: "Congress of Hogwarts",
+      c: "The House of Magic",
+      d: "The Ministry of Magic",
+      answer: 3, //change
       asked: false
    }
    
    Question3 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What is the name of the road Harry Potter grew up on?",
+      a: "Private Drive",
+      b: "Secret Street",
+      c: "Private Avenue",
+      d: "Wizard Drive",
+      answer: 0, //change
       asked: false
    }
    
    Question4 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "Who is the headmaster of Hogwarts?",
+      a: "Salazar Slytherin",
+      b: "Albus Dumbledore",
+      c: "Sirius Black",
+      d: "Cornelius Fudge",
+      answer: 1, //change
       asked: false
    }
    
    Question5 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What is the tournament called in the fourth movie?",
+      a: "The Quadwizard Tournament",
+      b: "The Interscholastic Tournament",
+      c: "The Triwizard Tournament",
+      d: "The Tournament of Champions",
+      answer: 3, //change
       asked: false
    }
    
    Question6 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "Who's code name was Padfoot?",
+      a: "Remus Lupin",
+      b: "Peter Pettigrew",
+      c: "James Potter",
+      d: "Sirius Black",
+      answer: 3, //change
       asked: false
    }
    
    Question7 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What is Lord Voldemort's full name?",
+      a: "Tom Marvolo Riddle",
+      b: "Tom Riddle Voldemort",
+      c: "Jason Keen Riddling",
+      d: "Voldemort Riddle",
+      answer: 0, //change
       asked: false
    }
    
    Question8 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What is Professor McGonagall's animagus?",
+      a: "Rat",
+      b: "Cat",
+      c: "Black Dog",
+      d: "Werewolf",
+      answer: 1, //change
       asked: false
    }
    
    Question9 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
+      question: "What does the seeker chase after in Quidditch?",
+      a: "The Bludger",
+      b: "The Quaffle",
+      c: "The Snitch",
+      d: "The Goblet",
       answer: 2, //change
       asked: false
    }
