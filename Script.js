@@ -123,22 +123,22 @@ function genQuestions() {
    }
    
    Question10 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What is the most powerful wand?",
+      a: "Harry's Wand",
+      b: "The Wand of Gryffindor",
+      c: "", // third wand name
+      d: "The Elder Wand",
+      answer: 3, //change
       asked: false
    }
    
    Question11 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "Which of the following is NOT a curse?",
+      a: "Expelliarmus",
+      b: "Imperius",
+      c: "Cruciatis",
+      d: "Avada Kedavra",
+      answer: 0, //change
       asked: false
    }
    
