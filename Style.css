@@ -2,7 +2,7 @@
 
 /* probably a background image that we can make the characters
    look like they are standing on it? */
-
+/*Makenzie*/
 body {
     background-image: url('Images/background.jpg');
     background-repeat: no-repeat;
@@ -13,14 +13,14 @@ body {
 /* this is for 12 cololum layouts it gives more control over page positioning and is size responsive*/
 * {box-sizing: border-box;}
 
-
+/*Makenzie*/
 .row::after {
    content: "";
    clear: both;
    display: table;
 }
 
-
+/*Makenzie*/
 [class*="col-"]
     {float: left;
     padding-top: 5px;
@@ -42,7 +42,7 @@ body {
     .col-12 {width: 100%;}
 /* end 12 column layout css code  */
 
-
+/*Makenzie*/
 #Title {
     font-size: 4vw;
     font-family: 'Square Peg', cursive;

@@ -10,6 +10,7 @@
 
 // shoved into a method to be collapsed for ease of working
 // **click arrow to left of function to collapse 200 lines
+// all of us worked on this
 function genQuestions() {
    /* possible format to store questions as objects
       we would pop the variables in and out of the 
@@ -38,7 +39,7 @@ function genQuestions() {
       b: "Hedwig",
       c: "Scabbers",
       d: "Trevor",
-      answer: 1, //change
+      answer: 1,
       asked: false
    }
    
@@ -48,7 +49,7 @@ function genQuestions() {
       b: "Congress of Hogwarts",
       c: "The House of Magic",
       d: "The Ministry of Magic",
-      answer: 3, //change
+      answer: 3,
       asked: false
    }
    
@@ -58,7 +59,7 @@ function genQuestions() {
       b: "Secret Street",
       c: "Private Avenue",
       d: "Wizard Drive",
-      answer: 0, //change
+      answer: 0,
       asked: false
    }
    
@@ -68,7 +69,7 @@ function genQuestions() {
       b: "Albus Dumbledore",
       c: "Sirius Black",
       d: "Cornelius Fudge",
-      answer: 1, //change
+      answer: 1,
       asked: false
    }
    
@@ -78,7 +79,7 @@ function genQuestions() {
       b: "The Interscholastic Tournament",
       c: "The Triwizard Tournament",
       d: "The Tournament of Champions",
-      answer: 3, //change
+      answer: 3,
       asked: false
    }
    
@@ -88,7 +89,7 @@ function genQuestions() {
       b: "Peter Pettigrew",
       c: "James Potter",
       d: "Sirius Black",
-      answer: 3, //change
+      answer: 3,
       asked: false
    }
    
@@ -98,7 +99,7 @@ function genQuestions() {
       b: "Tom Riddle Voldemort",
       c: "Jason Keen Riddling",
       d: "Voldemort Riddle",
-      answer: 0, //change
+      answer: 0,
       asked: false
    }
    
@@ -108,7 +109,7 @@ function genQuestions() {
       b: "Cat",
       c: "Black Dog",
       d: "Werewolf",
-      answer: 1, //change
+      answer: 1,
       asked: false
    }
    
@@ -118,7 +119,7 @@ function genQuestions() {
       b: "The Quaffle",
       c: "The Snitch",
       d: "The Goblet",
-      answer: 2, //change
+      answer: 2,
       asked: false
    }
    
@@ -126,9 +127,9 @@ function genQuestions() {
       question: "What is the most powerful wand?",
       a: "Harry's Wand",
       b: "The Wand of Gryffindor",
-      c: "", // third wand name
+      c: "The Horcrux",
       d: "The Elder Wand",
-      answer: 3, //change
+      answer: 3,
       asked: false
    }
    
@@ -138,87 +139,87 @@ function genQuestions() {
       b: "Imperius",
       c: "Cruciatis",
       d: "Avada Kedavra",
-      answer: 0, //change
+      answer: 0,
       asked: false
    }
    
    Question12 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "When is Harry Potter's birthday?",
+      a: "June 28th",
+      b: "July 31st",
+      c: "May 14th",
+      d: "March 30th",
+      answer: 1,
       asked: false
    }
    
    Question13 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What is Harry's mom's name?",
+      a: "Rose",
+      b: "Violet",
+      c: "Lily",
+      d: "Daisy",
+      answer: 2,
       asked: false
    }
    
    Question14 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What house is Harry Potter sorted into?",
+      a: "Slytherin",
+      b: "Hufflepuff",
+      c: "Ravenclaw",
+      d: "Gryffindor",
+      answer: 3,
       asked: false
    }
    
    Question15 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "Which platform in the King's Cross Station was Harry supposed to ride the train to Hogwarts?",
+      a: "Platform 9 3/4",
+      b: "Platform 9 1/4",
+      c: "Platform 8 3/4",
+      d: "Platform 9 1/2",
+      answer: 0,
       asked: false
    }
    
    Question16 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What animal can Harry speak to?",
+      a: "Mouse",
+      b: "Dragon",
+      c: "Snake",
+      d: "Dog",
+      answer: 2,
       asked: false
    }
    
    Question17 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "Ron Weasley has a fear of:",
+      a: "Bees",
+      b: "Beetles",
+      c: "Crickets",
+      d: "Spiders",
+      answer: 3,
       asked: false
    }
    
    Question18 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "How much does a ticket for the Knight Bus cost if you include a cup of hot chocolate?",
+      a: "16 sickles",
+      b: "14 sickles",
+      c: "15 sickles",
+      d: "13 sickles",
+      answer: 1,
       asked: false
    }
    
    Question19 = {
-      question: "",
-      a: "",
-      b: "",
-      c: "",
-      d: "",
-      answer: 2, //change
+      question: "What color did Hermione turn the leaves of the Weasley’s crabapple tree into for Harry’s 17th birthday?",
+      a: "Gold",
+      b: "Red",
+      c: "Blue",
+      d: "Silver",
+      answer: 0,
       asked: false
    }
 
@@ -239,6 +240,7 @@ function genQuestions() {
    
    it should be an error to run out of questions to ask - 
    design in a way to MAKE the game end in less than 20 questions */
+// Jordan
 function changeQuestion() {
    var ask = true;
    var qNum = 0; // initialize outside so it is in scope after the loop
@@ -264,6 +266,7 @@ function changeQuestion() {
 
 /* check if the answer was correct by comparing the answer with 
    the question Object's answer value */
+// Jordan
 function checkAnswer(answer) {
    if(answer == questions[qNum].answer) { // answer is correct
       qcorrect++;
@@ -277,6 +280,7 @@ function checkAnswer(answer) {
 
 var health = 100;
 // change healthbar & anything else
+// Jordan
 function answerCorrect() {
    // shirnk green and grow red by...10%?
    health -= 10;
@@ -285,6 +289,7 @@ function answerCorrect() {
 }
 
 // what happens here?
+// Jordan
 function answerIncorrect() {
 
 }
@@ -297,6 +302,7 @@ var qasked = 0;
 var qcorrect = 0;
 var shown = 0; // current question shown...useful in checking answer
 /* click functionality in here, show first random question */
+// Jordan
 $(document).ready(function() {
 
    changeQuestion();
