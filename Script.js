@@ -133,7 +133,7 @@ function genQuestions() {
       question: "What is the most powerful wand?",
       a: "Harry's Wand",
       b: "The Wand of Gryffindor",
-      c: "The Horcrux",
+      c: "Ron's Broken Wand",
       d: "The Elder Wand",
       answer: 3,
       asked: false
