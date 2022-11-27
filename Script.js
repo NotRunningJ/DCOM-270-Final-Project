@@ -285,7 +285,7 @@ function checkAnswer(answer) {
 }
 
 var health = 100;
-// change healthbar & anything else
+
 // Jordan
 function answerCorrect() {
    // shirnk green and grow red by...10%?
@@ -295,7 +295,6 @@ function answerCorrect() {
 }
 
 // what happens here?
-// Jordan
 function answerIncorrect() {
 
 }
