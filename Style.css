@@ -77,3 +77,26 @@ body {
     height: 100%;
     float:right;
 }
+
+/* Alyssa */
+#Question {
+    color: white;
+    font-weight: bold; 
+    font-size: 40px;
+    text-align: center;
+}
+  
+/* Alyssa */
+.Answers {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+ 
+/* Alyssa */
+#AnswerA, #AnswerB, #AnswerC, #AnswerD { 
+    border: 2px outset black;
+    background-color: darkgrey;
+}
