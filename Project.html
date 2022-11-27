@@ -55,7 +55,7 @@
 
                 </div>
             </div>
-        </div> <!-- End col-12-->
+        </div> <!-- End col-11-->
     </div> <!-- End row -->
 
  
@@ -66,42 +66,53 @@
 
     </div>
 
- 
 
-    <!--question container - we could make this either the bottom of the
-        page or the bottom. Bottom might look cleaner?
-    
-        questions show across the screen, then 4 answer options shown in
-        div-like buttons below the question-->
+    <div id="intro">
+        Help Harry Potter beat Lord Voldemort by answering the questions correctly
+    </div>
     <br><br>
-
-    <!--Alyssa-->
-    <div>     
-        <div id="Question">
-
-        </div>
+    <div id="button">
+        <button onclick="HideQuestions()">START</button>
+    </div>
+ 
+    <!-- start of div to hide questions until start button is selected -->
+    <div id="HideforStart" style="display:none">
+        <!--question container - we could make this either the bottom of the
+            page or the bottom. Bottom might look cleaner?
+        
+            questions show across the screen, then 4 answer options shown in
+            div-like buttons below the question-->
         <br><br>
 
-        <div class="Answers">
-            <div id="AnswerA">
+        <!--Alyssa-->
+        <div> <!-- beginning of question div -->
+            <div id="Question">
 
             </div>
-            <br>
+            <br><br>
 
-            <div id="AnswerB">
+            <div class="Answers">
+                <div id="AnswerA">
 
-            </div>
-            <br>
+                </div>
+                <br>
 
-            <div id="AnswerC">
-              
-            </div>
-            <br>
-            <div id="AnswerD">
-              
-            </div>
-        </div> <!--end answer class-->
-    </div> <!--end question container-->
+                <div id="AnswerB">
+
+                </div>
+                <br>
+
+                <div id="AnswerC">
+                
+                </div>
+                <br>
+                <div id="AnswerD">
+                
+                </div>
+                
+            </div> <!--end answer class-->
+        </div> <!--end question container-->
+    </div> <!--end hide questions div-->
 
  
 </html>

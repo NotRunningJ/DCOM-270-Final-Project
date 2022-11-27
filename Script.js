@@ -7,6 +7,12 @@
    and maybe a video clip at the end (voldemort killing harry for a loss
    and harry killing voldemort for a win) */
 
+//to hide the questions until the start button is selected
+// Alyssa
+function HideQuestions() {
+   var start = document.getElementById("HideforStart");
+   start.style.display = "block";
+}
 
 // shoved into a method to be collapsed for ease of working
 // **click arrow to left of function to collapse 200 lines
@@ -275,7 +281,6 @@ function checkAnswer(answer) {
       // make them cry
       answerIncorrect();
    }
-   changeQuestion(); // change question after checking answer
 }
 
 var health = 100;
@@ -301,33 +306,94 @@ var questions = genQuestions(); // array of 20 questions
 var qasked = 0;
 var qcorrect = 0;
 var shown = 0; // current question shown...useful in checking answer
+
 /* click functionality in here, show first random question */
-// Jordan
 $(document).ready(function() {
 
+   // Jordan
    changeQuestion();
 
    // click functionality for the 4 different answers
+   // Jordan
    $("#AnswerA").click(function(){ 
-      checkAnswer(0);   
+      checkAnswer(0);
+      changeQuestion();   
    });
 
+   // Alyssa
+   $("#AnswerA").hover(function(){
+      $(this).css("background-color", "#336699");
+   });
+
+   // Alyssa
+   $("#AnswerA").mouseout(function(){
+      $(this).css("background-color", "darkgrey");
+   });
+
+   // Jordan
    $("#AnswerB").click(function(){ 
       checkAnswer(1);   
+      changeQuestion(); 
    });
 
+   // Alyssa
+   $("#AnswerB").hover(function(){
+      $(this).css("background-color", "#336699");
+   });
+
+   // Alyssa
+   $("#AnswerB").mouseout(function(){
+      $(this).css("background-color", "darkgrey");
+   });
+
+   // Jordan
    $("#AnswerC").click(function(){ 
-      checkAnswer(2);   
+      checkAnswer(2);  
+      changeQuestion();
    });
 
+   // Alyssa
+   $("#AnswerC").hover(function(){
+      $(this).css("background-color", "#336699");
+   });
+
+   // Alyssa
+   $("#AnswerC").mouseout(function(){
+      $(this).css("background-color", "darkgrey");
+   });
+
+   // Jordan
    $("#AnswerD").click(function(){ 
-      checkAnswer(3);   
+      checkAnswer(3);  
+      changeQuestion(); 
    });
 
-   // purely for testing the healthbar changing before questions are set up
-   $("#HealthBar").click(function(){ 
-      answerCorrect();   
+   // Alyssa
+   $("#AnswerD").hover(function(){
+      $(this).css("background-color", "#336699");
    });
+
+   // Alyssa
+   $("#AnswerD").mouseout(function(){
+      $(this).css("background-color", "darkgrey");
+   });
+
+   // Alyssa
+   $("button").click(function(){
+      $("button").hide();
+      $("#intro").hide();
+   });
+  
+   // Alyssa
+   $("button").hover(function(){
+        $(this).css("background-color", "darkgrey");
+   });
+  
+   // Alyssa
+   $("button").mouseout(function(){
+        $(this).css("background-color", "white");
+   });
+
 
 
 }); // end document.ready()

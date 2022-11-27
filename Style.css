@@ -100,3 +100,34 @@ body {
     border: 2px outset black;
     background-color: darkgrey;
 }
+
+/* Alyssa */
+#intro {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: bold;
+}
+ 
+/* Alyssa */
+#button {
+    text-align: center;
+}
+  
+/* Alyssa */
+button {
+    background-color: white;
+    border: none;
+    color: #336699;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Square Peg', cursive;
+}
