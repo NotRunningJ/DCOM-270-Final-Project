@@ -32,7 +32,7 @@ function genQuestions() {
       b: "Gringotts",
       c: "The Leaky Cauldron",
       d: "Hogwarts",
-      answer: 2 ,
+      answer: 2,
       asked: false // keep track to not duplicate questions in a game
    }
    /* get access to the object variables by 
@@ -85,7 +85,7 @@ function genQuestions() {
       b: "The Interscholastic Tournament",
       c: "The Triwizard Tournament",
       d: "The Tournament of Champions",
-      answer: 3,
+      answer: 2,
       asked: false
    }
    
@@ -274,7 +274,7 @@ function changeQuestion() {
    the question Object's answer value */
 // Jordan
 function checkAnswer(answer) {
-   if(answer == questions[qNum].answer) { // answer is correct
+   if(answer == (questions[shown].answer)) { // answer is correct
       qcorrect++;
       answerCorrect();
    } else { // answer is wrong
@@ -296,7 +296,10 @@ function answerCorrect() {
 
 // what happens here?
 function answerIncorrect() {
-
+   // changing health just to see if logic is working
+   health += 5;
+   $('#Health').width(health + '%');
+   $('#Damage').width((100-health) + '%');
 }
 
 
