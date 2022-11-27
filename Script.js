@@ -281,6 +281,7 @@ function checkAnswer(answer) {
       // make them cry
       answerIncorrect();
    }
+   // moved changing answer into the click function 
 }
 
 var health = 100;
