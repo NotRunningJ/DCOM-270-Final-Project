@@ -68,38 +68,43 @@ body {
     background-color: red;
     height: 100%;
     float:left;
-    border-radius: 25px; 
+    /* Kenzie
+    by including a short hand border radius we can round the desiered corners and not the others.
+    first value applies to top-left corner,
+    second value applies to top-right corner,
+    third value applies to bottom-right corner,
+    and fourth value applies to bottom-left corner */
+    border-radius: 25px, 0px, 0px, 25px; 
 }
 
 
 /* right side of the health bar = colored green - start with width 100%
    then decrease 10% each correct answer */
-/* Jordan, Bridget */
+/* Jordan, Bridget, Makenzie */
 #Health {
     width:100%;
     background-color: green;
     height: 100%;
     float:right;
-    border-radius: 25px;
+    border-radius: 0px, 25px, 25px, 0px;
 }
 
-/* Alyssa, Bridget */
+/* Alyssa, Bridget, Makenzie */
 #Question {
     color: white;
-    font-weight: bold; 
-    font-size: 40px;
+    /*Kenzie chnaged BC for editing sake
+    background: rgba(76, 175, 80, 0.3);*/
+    font-size: 3.2vw;
     text-align: center;
     padding-top: 0%;
-    position: relative;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Square Peg', cursive;
 }
   
 /* Alyssa */
 .Answers {
     color: white;
-    font-size: 30px;
+    font-family: 'Square Peg', cursive;
+    font-size: 1.9vw;
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
@@ -108,23 +113,16 @@ body {
 /* Alyssa, Bridget */
 #AnswerA, #AnswerB, #AnswerC, #AnswerD { 
     border: 2px outset black;
-    background-color: darkgrey;
+    background: rgba(4, 59, 92, 0.5);
     border-radius: 25px;
 }
 
-/* Alyssa, Bridget */
+/* Alyssa, Bridget, Makenzie */
 #intro {
     color: white;
-    font-size: 40px;
-    font-family:'Raleway', 'sans-serif';
-    font-weight: 150;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    font-weight: bold;
-    padding-top: 0%;
-    position: relative; 
+    font-size: 4vw;
+    font-family:'Square Peg', cursive;
+    text-align: center
 }
  
 /* Alyssa */
@@ -140,7 +138,6 @@ button {
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;

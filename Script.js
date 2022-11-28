@@ -37,7 +37,7 @@ function genQuestions() {
    }
    /* get access to the object variables by 
       Question0.answer 
-      this returns 3 */
+      this returns 2 */
    
    Question1 = {
       question: "What is the name of Harry's owl?",
@@ -279,6 +279,7 @@ function checkAnswer(answer) {
       answerCorrect();
    } else { // answer is wrong
       // make them cry
+      // steal their dog (sorry kenzie had to slip a joke in somewhere)
       answerIncorrect();
    }
    // moved changing answer into the click function 
@@ -328,9 +329,12 @@ $(document).ready(function() {
       $(this).css("background-color", "#336699");
    });
 
-   // Alyssa
+   // Alyssa, Makenzie
+   // Alyssa - I changed your mouseout color to fit 
+   // the background while affording for some transparancy
+   // But if you hate it we can chnage it back!
    $("#AnswerA").mouseout(function(){
-      $(this).css("background-color", "darkgrey");
+      $(this).css("background-color", "rgba(4, 59, 92, 0.5)");
    });
 
    // Jordan
@@ -344,9 +348,9 @@ $(document).ready(function() {
       $(this).css("background-color", "#336699");
    });
 
-   // Alyssa
+   // Alyssa, Makenzie
    $("#AnswerB").mouseout(function(){
-      $(this).css("background-color", "darkgrey");
+      $(this).css("background-color", "rgba(4, 59, 92, 0.5)");
    });
 
    // Jordan
@@ -360,9 +364,9 @@ $(document).ready(function() {
       $(this).css("background-color", "#336699");
    });
 
-   // Alyssa
+   // Alyssa, Makenzie
    $("#AnswerC").mouseout(function(){
-      $(this).css("background-color", "darkgrey");
+      $(this).css("background-color", "rgba(4, 59, 92, 0.5)");
    });
 
    // Jordan
@@ -376,9 +380,9 @@ $(document).ready(function() {
       $(this).css("background-color", "#336699");
    });
 
-   // Alyssa
+   // Alyssa, Makenzie
    $("#AnswerD").mouseout(function(){
-      $(this).css("background-color", "darkgrey");
+      $(this).css("background-color", "rgba(4, 59, 92, 0.5)");
    });
 
    // Alyssa
