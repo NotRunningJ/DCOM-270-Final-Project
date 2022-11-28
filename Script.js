@@ -267,7 +267,6 @@ function changeQuestion() {
    $("#AnswerC").html(questions[qNum].c);
    $("#AnswerD").html(questions[qNum].d);
 
-   qasked++; // increment because we asked a new question
 }
 
 /* check if the answer was correct by comparing the answer with 
@@ -293,6 +292,16 @@ function answerCorrect() {
    health -= 10;
    $('#Health').width(health + '%');
    $('#Damage').width((100-health) + '%');
+   qcorrect++;
+   consecutive++;
+   if(qcorrect == 10) {
+      // win the game, make them either close the browser or
+      // restart with a restart button
+   }
+   if(consecutive >= 3) {
+      // show successful image 
+      consecutive = 0;
+   }
 }
 
 // what happens here?
@@ -301,14 +310,24 @@ function answerIncorrect() {
    health += 5;
    $('#Health').width(health + '%');
    $('#Damage').width((100-health) + '%');
+   qincorrect++;
+   consecutive = 0;
+   // show bad image
+
+   // lose the game
+   if(qincorrect == 3) {
+      // lose the game, make them either close the browser or
+      // restart with a restart button
+   }
 }
 
 
 var questions = genQuestions(); // array of 20 questions
 
 // keep track of how many answers were correct
-var qasked = 0;
+var qincorrect = 0;
 var qcorrect = 0;
+var consecutive = 0;
 var shown = 0; // current question shown...useful in checking answer
 
 /* click functionality in here, show first random question */
