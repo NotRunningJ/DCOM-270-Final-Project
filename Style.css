@@ -1,7 +1,5 @@
 /* Harry Potter Themed */
 
-/* probably a background image that we can make the characters
-   look like they are standing on it? */
 /*Makenzie*/
 body {
     background-image: url('Images/background.jpg');
@@ -45,6 +43,7 @@ body {
 /*Makenzie*/
 #Title {
     font-size: 4vw;
+    padding-left: 80px;
     font-family: 'Square Peg', cursive;
     color: white;
 }
@@ -68,31 +67,32 @@ body {
     background-color: red;
     height: 100%;
     float:left;
-    /* Kenzie
-    by including a short hand border radius we can round the desiered corners and not the others.
-    first value applies to top-left corner,
-    second value applies to top-right corner,
+    /* Kenzie 
+    by including a short hand border radius we can round the desiered corners and not the others. 
+    first value applies to top-left corner, 
+    second value applies to top-right corner, 
     third value applies to bottom-right corner,
-    and fourth value applies to bottom-left corner */
-    border-radius: 25px, 0px, 0px, 25px; 
+     and fourth value applies to bottom-left corner */
+    border-radius: 25px 0px 0px 25px;
 }
 
 
 /* right side of the health bar = colored green - start with width 100%
    then decrease 10% each correct answer */
-/* Jordan, Bridget, Makenzie */
+/* Jordan, Bridget */
 #Health {
     width:100%;
     background-color: green;
     height: 100%;
     float:right;
-    border-radius: 0px, 25px, 25px, 0px;
+    /*kenzie*/
+    border-radius: 0px 25px 25px 0px;
 }
 
-/* Alyssa, Bridget, Makenzie */
+/* Alyssa, Bridget, Kenzie */
 #Question {
     color: white;
-    /*Kenzie chnaged BC for editing sake
+/*  Kenzie chnaged BC for editing sake 
     background: rgba(76, 175, 80, 0.3);*/
     font-size: 3.2vw;
     text-align: center;
@@ -117,12 +117,12 @@ body {
     border-radius: 25px;
 }
 
-/* Alyssa, Bridget, Makenzie */
+/* Alyssa, Bridget, Kenzie */
 #intro {
     color: white;
     font-size: 4vw;
     font-family:'Square Peg', cursive;
-    text-align: center
+    text-align: center;
 }
  
 /* Alyssa */
@@ -144,3 +144,63 @@ button {
     border-radius: 12px;
     font-family: 'Square Peg', cursive;
 }
+
+/*Makenzie*/
+/* This is for the hints pop up menu */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding:10px;
+  text-decoration: none;
+  font-size: 1vw;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-header {
+  text-decoration: none;
+  font-size: 2vw;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/* Ending CSS for hints pop up menu */

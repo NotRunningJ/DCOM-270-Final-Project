@@ -1,11 +1,13 @@
-/* Most of the question logic and switching between questions
-   ... probably a changeQuestion function and checkAnswer function*/
 
-/* what should the punishment be for an incorrect question? */
-
-/* we can also mess around with different audio clips throughout 
-   and maybe a video clip at the end (voldemort killing harry for a loss
-   and harry killing voldemort for a win) */
+// for Help Section Nav Bar 
+//Kenzie 
+function openHelp() {
+   document.getElementById("myHelp").style.height = "100%";
+ }
+ 
+ function closeHelp() {
+   document.getElementById("myHelp").style.height = "0%";
+ }
 
 //to hide the questions until the start button is selected
 // Alyssa
@@ -241,8 +243,7 @@ function genQuestions() {
 
 /* change to show the next question
    keep track of the questions we have already shown to not duplicate 
-   
-   make this just set html fields and not show/hide divs..makes out job easier
+
    
    it should be an error to run out of questions to ask - 
    design in a way to MAKE the game end in less than 20 questions */
@@ -281,14 +282,13 @@ function checkAnswer(answer) {
       // steal their dog (sorry kenzie had to slip a joke in somewhere)
       answerIncorrect();
    }
-   // moved changing answer into the click function 
 }
 
 var health = 100;
 
 // Jordan
 function answerCorrect() {
-   // shirnk green and grow red by...10%?
+   // shirnk green and grow red by 10%.
    health -= 10;
    $('#Health').width(health + '%');
    $('#Damage').width((100-health) + '%');
@@ -297,27 +297,26 @@ function answerCorrect() {
    if(qcorrect == 10) {
       // win the game, make them either close the browser or
       // restart with a restart button
+      // hide the healthbar and questions
    }
    if(consecutive >= 3) {
-      // show successful image 
+      // show super successful image for getting 3 correct in a row
       consecutive = 0;
    }
 }
 
-// what happens here?
+// Jordan
 function answerIncorrect() {
-   // changing health just to see if logic is working
-   health += 5;
-   $('#Health').width(health + '%');
-   $('#Damage').width((100-health) + '%');
    qincorrect++;
    consecutive = 0;
    // show bad image
+
 
    // lose the game
    if(qincorrect == 3) {
       // lose the game, make them either close the browser or
       // restart with a restart button
+      // hide questions, healthbar, and everything else
    }
 }
 
@@ -330,7 +329,7 @@ var qcorrect = 0;
 var consecutive = 0;
 var shown = 0; // current question shown...useful in checking answer
 
-/* click functionality in here, show first random question */
+
 $(document).ready(function() {
 
    // Jordan
