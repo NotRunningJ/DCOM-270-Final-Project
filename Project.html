@@ -245,50 +245,79 @@
     <!--Kenzie-->
     <div class="row">
         <div class="col-12">
+            <!--Alyssa-->
             <div id="intro">
                 Help Harry Potter defeat Lord Voldemort by answering the questions correctly
+                <br>
+                Answer 10 questions correctly to win- but be careful, if you get 3 wrong, Voldemort 
+                will defeat Harry <!-- can change, but maybe want some explanation for how to win/lose-->
             </div>
         </div> <!-- close col-12-->
     </div> <!-- close row-->
 
 
+    <!-- Alyssa -->
+    <div class="gameover">
+        <div id="won" style="display:none">
+            <!-- Kenzie can we put a photo in with your fancy font? -->
+            <img src="Images/won.png" alt="won" width="30%;">
+        </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div id="button">
-                <button onclick="HideQuestions()">START</button>
-            </div>
-    
-            <!-- start of div to hide questions until start button is selected -->
-            <div id="HideforStart" style="display:none">
-                <!--Alyssa and Kenzie (but mainly Alyssa, shes amazing!-->
-                <div> <!-- beginning of question div -->
-                    <div id="Question">
+        <div id="lost" style="display:none">
+            <!-- Kenzie can we put a photo in with your fancy font? -->
+            <img src="Images/lost.png" alt="lost" width="30%;">
+        </div>
 
-                    </div>
+        <div id="restartbutton" style="display:none">
+            <button onclick="window.location.reload();">PLAY AGAIN</button>
+       </div>
+    </div> <!-- close game over class -->
+ 
+  
+ 
+    <!-- Alyssa -->
+    <div class="hidewhenover"> <!-- to hide the question and answers when the player wins or loses -->
 
-                    <div class="Answers">
-                        <div id="AnswerA">
+        <div class="row">
+            <div class="col-12">
+                <div id="button">
+                    <button onclick="HideQuestions()">START</button>
+                </div>
+        
+                <!-- start of div to hide questions until start button is selected -->
+                <div id="HideforStart" style="display:none">
+                    <!--Jordan and Kenzie (but mainly Jordan, he's amazing!)
+                    Alyssa only to add <br>s-->
+                    <div> <!-- beginning of question div -->
+                        <div id="Question">
 
                         </div>
-                        <br>
 
-                        <div id="AnswerB">
+                        <br><br> <!-- want space between question and answer? -->
 
-                        </div>
-                        <br>
+                        <div class="Answers">
+                            <div id="AnswerA">
 
-                        <div id="AnswerC">
-                        
-                        </div>
-                        <br>
-                        <div id="AnswerD">
-                        
-                        </div>
-                        
-                    </div> <!--end answer class-->
-                </div> <!--end question container-->
-            </div> <!--end hide questions div-->
-        </div> <!-- close col-12-->
-    </div> <!-- close row-->
+                            </div>
+                            <br>
+
+                            <div id="AnswerB">
+
+                            </div>
+                            <br>
+
+                            <div id="AnswerC">
+                            
+                            </div>
+                            <br>
+                            <div id="AnswerD">
+                            
+                            </div>
+                            
+                        </div> <!--end answer class-->
+                    </div> <!--end question container-->
+                </div> <!--end hide questions div-->
+            </div> <!-- close col-12-->
+        </div> <!-- close row-->
+    </div> <!--close hide when over div-->
 </html>

@@ -97,14 +97,14 @@ body {
     font-size: 3.2vw;
     text-align: center;
     padding-top: 0%;
-    font-family: 'Square Peg', cursive;
+    font-family: 'Roboto Condensed';
 }
   
 /* Alyssa */
 .Answers {
     color: white;
-    font-family: 'Square Peg', cursive;
-    font-size: 1.9vw;
+    font-family: 'Roboto Condensed';
+    font-size: 2.5vw;
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
@@ -119,14 +119,16 @@ body {
 
 /* Alyssa, Bridget, Kenzie */
 #intro {
-    color: white;
+    color: goldenrod; /* can change, but need some other color 
+    than white so doesn't blend in with clouds if page isn't full screen */
     font-size: 4vw;
     font-family:'Square Peg', cursive;
+    font-weight: bold;
     text-align: center;
 }
  
 /* Alyssa */
-#button {
+#startbutton {
     text-align: center;
 }
   
@@ -138,7 +140,7 @@ button {
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2.5vw;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
@@ -204,3 +206,7 @@ button {
   }
 }
 /* Ending CSS for hints pop up menu */
+
+.gameover {
+  text-align: center;
+}

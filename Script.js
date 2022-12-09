@@ -278,6 +278,7 @@ function checkAnswer(answer) {
       qcorrect++;
       answerCorrect();
    } else { // answer is wrong
+      qincorrect++;
       // make them cry
       // steal their dog (sorry kenzie had to slip a joke in somewhere)
       answerIncorrect();
@@ -292,9 +293,10 @@ function answerCorrect() {
    health -= 10;
    $('#Health').width(health + '%');
    $('#Damage').width((100-health) + '%');
-   qcorrect++;
    consecutive++;
    if(qcorrect == 10) {
+      $("#won, #restartbutton").show();
+      $('.hidewhenover').hide();
       // win the game, make them either close the browser or
       // restart with a restart button
       // hide the healthbar and questions
@@ -307,13 +309,14 @@ function answerCorrect() {
 
 // Jordan
 function answerIncorrect() {
-   qincorrect++;
    consecutive = 0;
    // show bad image
-
+   
 
    // lose the game
    if(qincorrect == 3) {
+      $("#lost, #restartbutton").show();
+      $('.hidewhenover').hide();
       // lose the game, make them either close the browser or
       // restart with a restart button
       // hide questions, healthbar, and everything else
@@ -405,7 +408,7 @@ $(document).ready(function() {
 
    // Alyssa
    $("button").click(function(){
-      $("button").hide();
+      $("startbutton").hide();
       $("#intro").hide();
    });
   
