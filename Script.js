@@ -18,6 +18,7 @@ function HideQuestions() {
 
 // shoved into a method to be collapsed for ease of working
 // **click arrow to left of function to collapse 200 lines
+
 // all of us worked on this
 function genQuestions() {
    /* possible format to store questions as objects
@@ -243,7 +244,6 @@ function genQuestions() {
 
 /* change to show the next question
    keep track of the questions we have already shown to not duplicate 
-
    
    it should be an error to run out of questions to ask - 
    design in a way to MAKE the game end in less than 20 questions */
@@ -278,7 +278,6 @@ function checkAnswer(answer) {
       qcorrect++;
       answerCorrect();
    } else { // answer is wrong
-      qincorrect++;
       // make them cry
       // steal their dog (sorry kenzie had to slip a joke in somewhere)
       answerIncorrect();
@@ -294,33 +293,46 @@ function answerCorrect() {
    $('#Health').width(health + '%');
    $('#Damage').width((100-health) + '%');
    consecutive++;
+   // win the game
    if(qcorrect == 10) {
       $("#won, #restartbutton").show();
       $('.hidewhenover').hide();
-      // win the game, make them either close the browser or
-      // restart with a restart button
-      // hide the healthbar and questions
-   }
-   if(consecutive >= 3) {
+
+   // if game not won but 3 in a row correct
+   // don't want both
+   } else if(consecutive >= 3) {
       // show super successful image for getting 3 correct in a row
+      document.getElementById("brilliant").play();
+      $("#consecutivewins").show();
+      setTimeout(() => {
+         $("#consecutivewins").hide();
+      }, 4000);
       consecutive = 0;
    }
 }
 
 // Jordan
 function answerIncorrect() {
+   qincorrect++;
    consecutive = 0;
    // show bad image
-   
 
    // lose the game
    if(qincorrect == 3) {
       $("#lost, #restartbutton").show();
       $('.hidewhenover').hide();
+
       // lose the game, make them either close the browser or
       // restart with a restart button
       // hide questions, healthbar, and everything else
+   } else {
+      $("#answerwrong").show();
+      document.getElementById("leviosa").play();
+      setTimeout(() => {
+         $("#answerwrong").hide();
+      }, 4000);
    }
+   
 }
 
 
@@ -408,7 +420,7 @@ $(document).ready(function() {
 
    // Alyssa
    $("button").click(function(){
-      $("startbutton").hide();
+      $("#startbutton").hide();
       $("#intro").hide();
    });
   

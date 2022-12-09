@@ -1,5 +1,7 @@
 /* Harry Potter Themed */
 
+
+
 /*Makenzie*/
 body {
     background-image: url('Images/background.jpg');
@@ -74,7 +76,9 @@ body {
     third value applies to bottom-right corner,
      and fourth value applies to bottom-left corner */
     border-radius: 25px 0px 0px 25px;
+    margin-top:20px;
 }
+
 
 
 /* right side of the health bar = colored green - start with width 100%
@@ -87,6 +91,7 @@ body {
     float:right;
     /*kenzie*/
     border-radius: 0px 25px 25px 0px;
+    margin-top: 20px;
 }
 
 /* Alyssa, Bridget, Kenzie */
@@ -209,4 +214,16 @@ button {
 
 .gameover {
   text-align: center;
+}
+
+#consecutivewins {
+  display: none;
+  font-size: 100px;
+  color: white;
+}
+
+#answerwrong {
+  display: none;
+  font-size: 100px;
+  color: white;
 }
