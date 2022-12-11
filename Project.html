@@ -22,6 +22,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="script.js"></script>
 
+    <!--Sets up wrapper for background music
+        Users can toggle between background music on/off(Harry Potter Theme)
+    Bridget-->
+    <div id="backgroundnoisewrapper">
+        <a id="player" 
+            onclick="javascript:toggleSound();">
+        <div id="musicplaying">Click for Music!</div>
+        </a>
+        <audio id="backgroundaudio" loop>
+            <source src="Audio/background.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
 
     <!--make Voldemort's helathbar the title? start off all green
         and make progressivly more red with each correct answer-->

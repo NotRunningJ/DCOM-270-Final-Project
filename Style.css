@@ -227,3 +227,22 @@ button {
   font-size: 100px;
   color: white;
 }
+
+/*Bridget*/
+#player{
+  font-family: 'Square Peg', cursive;
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
+  
+}
+
+/*Bridget*/
+#player:hover{
+  font-family: 'Square Peg', cursive;
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: underline;
+}

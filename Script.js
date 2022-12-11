@@ -16,6 +16,16 @@ function HideQuestions() {
    start.style.display = "block";
 }
 
+//sets up music on/off --Bridget
+function toggleSound() {
+   var audioElem = document.getElementById('backgroundaudio');
+   if (audioElem.paused) {
+     audioElem.play();
+   } else {
+     audioElem.pause();
+   }
+}
+
 // shoved into a method to be collapsed for ease of working
 // **click arrow to left of function to collapse 200 lines
 
