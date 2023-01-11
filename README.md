@@ -1,5 +1,3 @@
-# DCOM-270-Final-Project
+# Harry Potter Trivia Quiz
 
-## Harry Potter Quiz
-
-Repository for group to access updated code
+This was my group's final project for a web development course at Lebanon Valley College.
